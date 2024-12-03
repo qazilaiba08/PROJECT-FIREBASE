@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+     <!-- Tailwind css CDN -->
+     <script src="https://cdn.tailwindcss.com"></script>
+     <!-- SweetAlert2 from CDN -->
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <!-- component -->
+<div style="background-color: #15202b" class=" sm:mx-32 lg:mx-32 xl:mx-72 ">
+    <div class="flex justify-between container mx-auto">
+    <div class="w-full">
+    <div class="mt-4 px-4">
+    <h1 class="font-semibold  flex text-4xl pt-10 px-5 text-white-900 ">Update Profile 
+    </h1>
+    
+    <form class="mx-5 my-5">
+    <label class="relative block p-3 border-2 border-white rounded" htmlFor="name">
+      <span class="text-md font-semibold text-white-900" htmlFor="name">
+        Name
+      </span>
+      <input class="w-full bg-transparent p-0 text-sm  text-gray-500 focus:outline-none" id="name" type="text" placeholder="Your name" />
+    </label>
+    <div class="mt-5">
+    <label class="input-field inline-flex items-baseline border-2 border-beige rounded  p-4">
+    <span class="flex-none text-white-900 select-none leading-none">Contact No
+    </span>
+    <div class="flex-1 leading-none">
+    <input id="handle" type="number" class="w-full pl-1 bg-transparent focus:outline-none" name="handle" placeholder="+9231300000" />
+    </div>
+    </label>
+    </div>
+    
+     
+    <div class="shrink-0 mt-5">
+      <img class="h-20 w-20 object-cover rounded-full" src="https://res.cloudinary.com/dbsdadme8/image/upload/v1733229811/e9mzbwu1e6bklylpwglw.jpg" alt="Current profile photo" />
+      <label class="block pt-2">
+          <span class="sr-only t-2">Choose profile photo</span>
+          <input type="file" id="fileInputInput" class="w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-pink-300 file:text-white-900 hover:file:bg-rose-300" />
+      </label>
+  </div>
+    
+    <label class="relative block p-3 border-2 mt-5 border-white rounded" htmlFor="name">
+      <span class="text-md font-semibold text-beige-900" htmlFor="name">
+        About
+      </span>
+    
+      <input class="w-full   p-0 text-sm border-none bg-transparent text-gray-500 focus:outline-none" id="name" type="text" placeholder="Write Your Bio" />
+    </label>
+    
+    
+    <label class="relative block p-3 border-2  mt-5 border-white rounded" htmlFor="name">
+      <span class="text-md font-semibold  text-beige-900" htmlFor="name">
+      Postal Code
+      </span>
+    
+      <input class="w-full read-only:bg-zinc-800  p-0 text-sm bg-transparent text-gray-500 focus:outline-none" id="postal" type="number" placeholder="43210" />
+      
+    </label>
+    
+    <label class="relative block p-3 border-2 mt-5 border-beige rounded" htmlFor="name">
+      <span class="text-md font-semibold  text-beige-900" htmlFor="name">
+      Email Verify
+      </span>
+    
+     <input class="w-full read-only:bg-zinc-800  p-0 text-sm bg-transparent text-gray-500 focus:outline-none" id="email" type="email" placeholder="123@gmail.com" />
+     <button class="font-medium bg-blue-500 px-2 text-white text-sm rounded-md">verify Email</button>
+    </label>
+    
+    <h1 class="text-2xl font-semibold mt-5">Category :</h1>
+    <p class="text-black text-sm font-normal flex gap gap-2 pt-2">
+              <button class="border-2 border-beige-800 rounded-md border-b-4 border-l-4 font-beige px-2">Business</button>
+              <button class="border-2 border-beige-800 rounded-md border-b-4 border-l-4 font-beige px-2">Creative</button>
+              <button class="border-2 border-beige-800 rounded-md border-b-4 border-l-4 font-beige px-2">Education</button>
+    </p>
+    
+    <Button  id="submit"
+    class="mt-5 border-1 px-5 py-2 rounded-lg border-beige border-b-2 font-beige translate-y-2 border-l-4">
+      Submit
+    </Button>
+    </form>
+      </div>
+        </div>
+    
+    
+    </div>
+    </div>
+    </div>
+    <script type="module" src="firebase.js"></script>
+    <script type="module" src="app.js"></script>
+    <script type="module" src="login.js"></script>
+    <script type="module" src="profile.js"></script>
+</body>
+</html>
